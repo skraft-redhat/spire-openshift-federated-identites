@@ -22,7 +22,7 @@ spec:
               value: unix:///run/spire/sockets/spire-agent.sock
           envFrom:
             - secretRef:
-                name: workload-app
+                name: dynamic-secret-wo-credentials
           name: workload-app
           command:
             - /bin/bash
